@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Hero Application Form" />
+<meta name="keywords" content="hero, game, adventure" />
+<meta name="robots" content="index, follow" />
+<meta name="viewport" content="user-scalable=no, width=device-width" />
+<title>Add A Hero</title>
+<link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+	<header>
+    <h1> Add a Hero</h1>
+    </header>
+    <form action="#" method="post" id="theForm">
+    	<fieldset id = "newHero">
+        	<legend id="legendTab"><h2>New Hero Details</h2></legend>
+            <div id="dOne">
+            	<ul id="questionsList">
+                <li><label>Hero Class</label>
+                	<select id="heroClass">
+                    	<optgroup label="What's the Heroes class?">
+                        <option value="barbarian">Barbarian</option>
+                        <option value="mage">Mage</option>
+                        <option value="witchdr">Witch Doctor</option>
+                        <option value="assassin">Assassin</option>
+                        <option value="druid">Druid</option>
+                        <option value="bard">Bard</option>
+                        <option value="necro">Necromancer</option>
+                        <option value="monk">Monk</option>
+                        </optgroup>
+                        </select>
+                        </li>
+           <!--Hero Name input field-->
+           <li><label for="heroName">Hero Name</label><input type="text" id="heroName"
+           		placeholder="Name here be classy ;)"></li>
+           
+           <!--Height Slider-->
+           <li><label>Height?</label>
+           	<input type="range" id="height" value="5" min="1" max="10"/>
+            <label id="heightSlider">1 to 10</label></li>
+            
+            <!--Weight Slider-->
+            <li><label>Weight in lbs?</label>
+           	<input type="range" id="weight" value="150" min="100" max="300"/>
+            <label id="weightSlider">100 to 300 lbs</label></li>
+            
+            <!--Hero leader checkbox-->
+            <li id="heroLeader">Is this hero the party leader?</li>
+            <input type="checkbox" id="leader"/><label for="leader"></label>
+            
+            
+            <!--Comments about Herp -->
+            <li><label>Hero Notes</label>
+            <textarea> </textarea>
+            
+            <!--Hidden -->
+            <input type="hidden" id="heroHidden">
+            
+            </li>
+            </ul>
+            </div>
+            
+         <div id="dTwo">
+         
+         </div>
+         
+         <input type="button" value="Submit Hero" id="heroAdd"/>
+         
+         </fieldset>
+         
+         </form>
+         <footer>
+         
+         <a href="#" id="showHeroes">Show Heroes</a>
+         <a href="#" hidden id="deleteHero">Clear Hero Data</a>
+         </footer>
+         </body>
+         <script src="js/script.js"></script>
+</html>
